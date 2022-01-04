@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#E5E5E5">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pools_card"
+        android:layout_width="384dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="384dp"
+            android:layout_height="117dp">
+
+            <TextView
+                android:id="@+id/text_bonus_table_pools"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/green_rectangle"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Bonus Table"
+                android:textColor="#02A253"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_entry_fee"
+                android:layout_width="60dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="9dp"
+                android:text="Entry Fee"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_bonus_table_pools" />
+
+            <TextView
+                android:id="@+id/text_entry_fee_amount"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="₹1"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_entry_fee" />
+
+            <TextView
+                android:id="@+id/text_101"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="54dp"
+                android:background="@drawable/gray_rectangle"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="101"
+                android:textColor="#230045"
+                app:layout_constraintStart_toEndOf="@+id/text_entry_fee_amount"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/text_2p"
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="54dp"
+                android:background="@drawable/gray_rectangle"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="2P"
+                android:textColor="#230045"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/text_101"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_play_pool"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/green"
+                android:gravity="center"
+                android:text="Play"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_play_pool" />
+
+            <TextView
+                android:id="@+id/text_winning_amount"
+                android:layout_width="40dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="₹1.7"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+
+            <TextView
+                android:id="@+id/text_players"
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="89 Players"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/text_winning_amount"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <ImageView
+                android:id="@+id/image_gift_box_pools"
+                android:layout_width="18dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="3dp"
+                app:layout_constraintStart_toEndOf="@+id/text_players"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:srcCompat="@drawable/gift_box" />
+
+            <TextView
+                android:id="@+id/text_bonus_percentage"
+                android:layout_width="90dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Use 10% Bonus"
+                android:textColor="#02A253"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/image_gift_box_pools"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Points">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/text_rummy"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/roboto"
+            android:text="Rummy"
+            android:textColor="#313131"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_back_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_how_to_play"
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="90dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="How to play"
+            android:textColor="#DC0C41"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_rummy"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_wallet_pools"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ouch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_rummy_banner"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rummy_banner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/text_cash_games"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/red_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Cash Games"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_tournaments"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/gray_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Tournaments"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_special_cont"
+            android:layout_width="115dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/gray_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Special Contests"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_deals"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/image_points"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.59"
+            app:srcCompat="@drawable/rummy_star" />
+
+        <ImageView
+            android:id="@+id/image_high_light_bar1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_deals"
+            app:srcCompat="@drawable/high_light_bar" />
+
+        <ImageView
+            android:id="@+id/image_points"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_tournaments"
+            app:layout_constraintVertical_bias="0.271"
+            app:srcCompat="@drawable/rummy_points" />
+
+
+        <ImageView
+            android:id="@+id/image_high_light_bar2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_points"
+            app:srcCompat="@drawable/high_light_bar" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/image_pool"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pool"
+            app:layout_constraintBottom_toTopOf="@+id/text_pool_101"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toEndOf="@+id/image_points"
+            app:layout_constraintTop_toBottomOf="@+id/text_special_cont" />
+
+        <ImageView
+            android:id="@+id/image_high_light_bar3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="40dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_pool_101"
+            app:srcCompat="@drawable/high_light_bar" />
+
+        <TextView
+            android:id="@+id/text_deals"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Deals"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_points"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_deals"
+            app:layout_constraintVertical_bias="0.304" />
+
+        <TextView
+            android:id="@+id/text_points"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Points"
+            android:textColor="#796B84"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_points"
+            app:layout_constraintVertical_bias="0.304" />
+
+        <TextView
+            android:id="@+id/text_pool_101"
+            android:layout_width="62dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Pool 101"
+            android:textColor="#796B84"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.828"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_points"
+            app:layout_constraintVertical_bias="0.304" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/points_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/points_card" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
